@@ -16,6 +16,9 @@ How to RUN the code?
 6. You should Run "Test_Subtask_2.py" to predict the quality grade on Test Database, and the SRCC, PLCC, RMSE metrics are provided
    in "Metrics" folder for comparing performance. 
 
+Configuration:
+Tensorflow 1.4 with Nvidia GTX 690
+
 If you have any question, please contact me.
 
 Zhaohui Che
