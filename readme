@@ -1,0 +1,22 @@
+
+Author: Zhaohui Che
+E-mail: chezhaohui@sjtu.edu.cn
+
+This code is for Blind Quality Estimation and Distortion Classification Task of Industrial 2D Matrix Symbols
+
+There are 4 .py files in total
+
+How to RUN the code?
+1. You should download the training and testing database given in the paper first. 
+2. You should change the data path as your own path, please follow the hints of the .py files
+3. You should Run "Train_Subtask_1.py" to train the 1st sub-network for distortion type Classification Task
+4. You should Run "Train_Subtask_2.py" to inherit the weights and biases of the shared layers obtained by step.3, and 
+   further train the 2nd sub-network for quality grade eitimation task.
+5. You should Run "Test_Subtask_1.py" to test the distortion classification accuracy of the proposed model on Test Database.
+6. You should Run "Test_Subtask_2.py" to predict the quality grade on Test Database, and the SRCC, PLCC, RMSE metrics are provided
+   in "Metrics" folder for comparing performance. 
+
+If you have any question, please contact me.
+
+Zhaohui Che
+2018.1.31
