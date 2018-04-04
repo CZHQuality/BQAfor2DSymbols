@@ -122,8 +122,17 @@ with tf.Session() as sess:
     saver.restore(sess, "./MyModel/modelSubtask1.ckpt")#Trained Model for Subtask 1
     step = 1
     
-    list = os.listdir("./DistortionTypeDataset/") #change as your own path
-    
+    # list = os.listdir("./DistortionTypeDataset/") #change as your own path
+    linestrlist = []
+    fh = open("./list.txt", 'r')
+    for line in fh.readlines():
+        print(line)
+        linestr = line.strip()
+        print(linestr)
+        linestrlist.append(linestr)
+    fh.close()
+    list = linestrlist
+    print("list is:", list)
 
     for batch_id in range(151, 200): #Testing set for subtask1
         batch = list[batch_id * batch_size:batch_id * batch_size + batch_size]
