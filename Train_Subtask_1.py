@@ -113,6 +113,12 @@ with tf.Session() as sess:
     step = 1
     
     list = os.listdir("./DistortionTypeDataset/") #change as your own path
+    random.shuffle(list) 
+    print("list is:", list)
+    fh = open("./list.txt", 'w')
+    for line in list:
+        fh.write(line+'\n')
+    fh.close()
     
     count=0
     
